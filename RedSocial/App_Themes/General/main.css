@@ -1,0 +1,242 @@
+img{
+ 	max-width: 100%; 	
+ }
+
+ a{
+ 	text-decoration:none; 
+ }
+
+.anchomaximo{
+	max-width: 200%; 
+}
+
+
+.imgchicas{
+	max-width: 50%; 
+}
+
+.fondo_verde1{
+	background-color:#4AB230;
+}
+
+.fondo_verde2{
+	background-color:#56FF2B;
+}
+
+.fondo_indigo{
+	background-color:#4945FF;
+}
+
+.fondo_terracota{
+	background-color:#CC6B37;
+}
+
+.fondo_marron{
+	background-color:#B2521E;
+}
+
+.fondo_blanco{
+	background-color:#F0E3E1;
+}
+.color_verde1{
+	color:#4AB230;
+}
+
+.color_verde2{
+	color:#56FF2B;
+}
+
+.color_indigo{
+	color:#4945FF;
+}
+
+.color_terracota{
+	color:#CC6B37;
+}
+
+.color_marron{
+	color:#B2521E;
+}
+
+ .color-rojo{
+ 	color:#6E1F2D;
+ }
+.color-gris-obscuro{
+ 	color:#403E3F;
+ }
+ .color-gris-claro{
+ 	color:#BFC3BD;
+ }
+ .color-pastel{
+ 	color:#998562;
+ }
+
+  .color-blanco{
+ 	color:#6F9373;
+ }
+
+ .fondo-gris-obscuro{
+ 	background-color:#403E3F;
+ }
+ .fondo-gris-claro{
+ 	background-color:#BFC3BD;
+ }
+
+.fondo-verde-claro{
+ 	background-color:#4FB242;
+ }
+
+.text-shadow{
+	text-shadow: 1px 1px #000000;
+}
+
+.quitar-float{
+	float:none;
+}
+
+.flotar-derecha{
+	float:right;
+}
+
+.flotar-izquieda{
+	float:left;
+}
+
+.espacio-arriba{
+	margin-top:0.9em;
+}
+.espacio-abajo{
+	margin-bottom:0.9em;
+}
+
+.sin-arriba{
+	margin-top: none;
+}
+
+.pacifico{
+	font-family: 'Pacifico', cursive;
+}
+
+.grande{
+	font-size: 50px;
+
+}
+
+.subtitulos{
+	font-size: 1em;
+
+}
+
+.lato{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.espacio-derecha{
+	margin-right: 1em;
+}
+
+a{
+	color:#403E3F;
+}
+
+.no-lista li{
+	list-style-type: none;
+	margin: 0px;
+	padding:0px;
+}
+
+.padding-largo{
+	pading: 5px 10px;
+}
+
+.inline-block{
+	float:none;
+	display: inline-block;
+	margin-right: -4px;
+}
+.logo-menu{
+	font-size:20px;
+}
+.texto-menu{
+	font-size: 15px;
+}
+
+.largo-80{
+	width: 80%;
+}
+
+.largo-75{
+	width: 75%;
+}
+
+.largo-25{
+	width: 25%;
+}
+
+.ubuntu{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.triangulo_sup {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #000;
+}
+
+.triangulo_inf {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #000;
+}
+
+.triangulo-equilatero-bottom {
+     width: 0
+     height: 0;
+     border-right: 100px solid transparent;
+     border-top: 100px solid transparent;
+     border-left: 100px solid transparent;
+     border-bottom: 100px solid #f0ad4e;
+}
+
+body{
+    margin:0px;
+    background:#998562;
+}
+.header-cont {
+    width:100%;
+    position:fixed;
+    top:0px;
+}
+
+
+
+.centrador{
+	top:45%;
+	left:30%;
+	
+}
+
+.center{
+	margin: auto;
+	top: 0px;
+	bottom: 0px;
+	left: 0px; /*Sin esta línea (pero con todas las demás),
+                   el elemento se pegará al lado izquierdo*/
+	right: 0px; /*Sin esta línea (pero con todas las demás),
+                    el elemento se pegará al lado derecho*/
+}
+
+.titulos{
+	font-size: 6em;
+	
+}
+
+.text_encima {
+	position: absolute;
+	margin: auto;
+}
+
