@@ -2,7 +2,7 @@
 
 <asp:Content ID="cphContenido" ContentPlaceHolderID="Cuerpo" Runat="Server">
     <asp:Panel runat="server" ID="panInicio" CssClass="FondoRegistracion">
-        <asp:Image runat="server" ID="imgRedSocialORT" ImageUrl="~/Imagenes/RedSocialORT.png" CssClass="RedSocialORT" />
+        <asp:Image runat="server" ID="imgRedSocialORT" ImageUrl="~/Imagenes/quienes_somos.png" CssClass="RedSocialORT" />
 
         <asp:Panel runat="server" ID="panRegistraciom" CssClass="Registracion">
             <asp:Table runat="server" ID="tblRegistracion" CellSpacing="8">

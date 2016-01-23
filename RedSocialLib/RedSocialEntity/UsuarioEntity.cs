@@ -10,24 +10,24 @@ namespace RedSocialEntity
     {
         public UsuarioEntity()
         {
-            Id = 0;
+            Id_usr = 0;
             Nombre = "";
             Apellido = "";
             Email = "";
-            Password = "";
-            FechaNacimiento = DateTime.MinValue;
+            Pasword = "";
+            Fnac = DateTime.MinValue;
             Sexo = ' ';
-            Foto = null;
+            //Foto = null;
             FechaRegistracion = DateTime.Now;
-            FechaActualizacion = null;
+           // FechaActualizacion = null;
         }
 
-        public int Id { get; set; }
+        public int Id_usr { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Email { get; set; }
-        public string Password { get; set; }
-        public DateTime FechaNacimiento { get; set; }
+        public string Pasword { get; set; }
+        public DateTime Fnac { get; set; }
         public char Sexo { get; set; }
         public string Foto { get; set; }
         public DateTime FechaRegistracion { get; set; }
@@ -38,8 +38,8 @@ namespace RedSocialEntity
             if (Nombre.Trim() == "" ||
                 Apellido.Trim() == "" ||
                 Email.Trim() == "" ||
-                Password.Trim() == "" ||
-                FechaNacimiento == DateTime.MinValue ||
+                Pasword.Trim() == "" ||
+                Fnac == DateTime.MinValue ||
                 Sexo == ' ')
             {
                 throw new DatosObligatoriosExcepcion();
@@ -50,7 +50,7 @@ namespace RedSocialEntity
                 throw new EmailExcepcion();
             }
 
-            if (FechaNacimiento > DateTime.Today)
+            if (Fnac > DateTime.Today)
             {
                 throw new FechaNacimientoExcepcion();
             }

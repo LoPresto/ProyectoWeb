@@ -4,8 +4,17 @@
 
 <html lang="es">
 <head id="Head1" runat="server">
-    <meta charset="ISO-8859-1" />
-    <title>Red Social ORT</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--<link href="App_Themes/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
+	<link rel="stylesheet" href="App_Themes/General/main.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <title>LoPresto.com</title>
 </head>
 <body>
     <form id="form1" runat="server">

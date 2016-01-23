@@ -21,21 +21,21 @@ namespace RedSocialDataSQLServer
         private UsuarioEntity CrearUsuario(SqlDataReader cursor)
         {
             UsuarioEntity usuario = new UsuarioEntity();
-            usuario.Id = cursor.GetInt32(cursor.GetOrdinal("UsuarioID"));
-            usuario.Nombre = cursor.GetString(cursor.GetOrdinal("UsuarioNombre"));
-            usuario.Apellido = cursor.GetString(cursor.GetOrdinal("UsuarioApellido"));
-            usuario.Email = cursor.GetString(cursor.GetOrdinal("UsuarioEmail"));
-            usuario.Password = cursor.GetString(cursor.GetOrdinal("UsuarioPassword"));
-            usuario.FechaNacimiento = cursor.GetDateTime(cursor.GetOrdinal("UsuarioFechaNacimiento"));
-            usuario.Sexo = cursor.GetString(cursor.GetOrdinal("UsuarioSexo"))[0];
+            usuario.Id_usr = cursor.GetInt32(cursor.GetOrdinal("Id_usr"));
+            usuario.Nombre = cursor.GetString(cursor.GetOrdinal("Nombre"));
+            usuario.Apellido = cursor.GetString(cursor.GetOrdinal("Apellido"));
+            usuario.Email = cursor.GetString(cursor.GetOrdinal("Email"));
+            usuario.Pasword = cursor.GetString(cursor.GetOrdinal("Pasword"));
+            usuario.Fnac = cursor.GetDateTime(cursor.GetOrdinal("Fnac"));
+            usuario.Sexo = cursor.GetString(cursor.GetOrdinal("Sexo"))[0];
 
-            if (!cursor.IsDBNull(cursor.GetOrdinal("UsuarioFoto")))
-                usuario.Foto = cursor.GetString(cursor.GetOrdinal("UsuarioFoto"));
+            //if (!cursor.IsDBNull(cursor.GetOrdinal("UsuarioFoto")))
+            //    usuario.Foto = cursor.GetString(cursor.GetOrdinal("UsuarioFoto"));
 
-            usuario.FechaRegistracion = cursor.GetDateTime(cursor.GetOrdinal("UsuarioFechaRegistracion"));
+            usuario.FechaRegistracion = cursor.GetDateTime(cursor.GetOrdinal("FechaRegistracion"));
 
-            if (!cursor.IsDBNull(cursor.GetOrdinal("UsuarioFechaActualizacion")))
-                usuario.FechaActualizacion = cursor.GetDateTime(cursor.GetOrdinal("UsuarioFechaActualizacion"));
+            //if (!cursor.IsDBNull(cursor.GetOrdinal("UsuarioFechaActualizacion")))
+            //    usuario.FechaActualizacion = cursor.GetDateTime(cursor.GetOrdinal("UsuarioFechaActualizacion"));
 
             return usuario;
         }
@@ -53,15 +53,15 @@ namespace RedSocialDataSQLServer
                         comando.CommandType = CommandType.StoredProcedure;
                         SqlCommandBuilder.DeriveParameters(comando);
 
-                        comando.Parameters["@UsuarioNombre"].Value = usuario.Nombre.Trim();
-                        comando.Parameters["@UsuarioApellido"].Value = usuario.Apellido.Trim();
-                        comando.Parameters["@UsuarioEmail"].Value = usuario.Email.Trim();
-                        comando.Parameters["@UsuarioPassword"].Value = usuario.Password.Trim();
-                        comando.Parameters["@UsuarioFechaNacimiento"].Value = usuario.FechaNacimiento;
-                        comando.Parameters["@UsuarioSexo"].Value = usuario.Sexo;
-                        comando.Parameters["@UsuarioFechaRegistracion"].Value = usuario.FechaRegistracion;
+                        comando.Parameters["@Nombre"].Value = usuario.Nombre.Trim();
+                        comando.Parameters["@Apellido"].Value = usuario.Apellido.Trim();
+                        comando.Parameters["@Email"].Value = usuario.Email.Trim();
+                        comando.Parameters["@Password"].Value = usuario.Pasword.Trim();
+                        comando.Parameters["@Fnac"].Value = usuario.Fnac;
+                        comando.Parameters["@Sexo"].Value = usuario.Sexo;
+                        comando.Parameters["@FechaRegistracion"].Value = usuario.FechaRegistracion;
                         comando.ExecuteNonQuery();
-                        usuario.Id = Convert.ToInt32(comando.Parameters["@RETURN_VALUE"].Value);
+                        usuario.Id_usr = Convert.ToInt32(comando.Parameters["@RETURN_VALUE"].Value);
                     }
                     
                     conexion.Close();
@@ -122,7 +122,7 @@ namespace RedSocialDataSQLServer
                         comando.CommandType = CommandType.StoredProcedure;
                         SqlCommandBuilder.DeriveParameters(comando);
 
-                        comando.Parameters["@UsuarioEmail"].Value = email.Trim();
+                        comando.Parameters["@Email"].Value = email.Trim();
                         existeEmail = Convert.ToBoolean(comando.ExecuteScalar());
                     }
 
@@ -150,8 +150,8 @@ namespace RedSocialDataSQLServer
                         comando.CommandType = CommandType.StoredProcedure;
                         SqlCommandBuilder.DeriveParameters(comando);
 
-                        comando.Parameters["@UsuarioEmail"].Value = email.Trim();
-                        comando.Parameters["@UsuarioPassword"].Value = password.Trim();
+                        comando.Parameters["@Email"].Value = email.Trim();
+                        comando.Parameters["@Password"].Value = password.Trim();
                         
                         using (SqlDataReader cursor = comando.ExecuteReader())
                         {

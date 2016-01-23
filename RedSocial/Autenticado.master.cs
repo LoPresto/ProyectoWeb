@@ -13,4 +13,12 @@ public partial class Autenticado : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void btnCerrar_Sesion(object sender, EventArgs e)
+    {
+        Session.Abandon(); // Limpiar la sesion
+        System.Web.Security.FormsAuthentication.SignOut();
+        Server.Transfer("Default.aspx");
+
+    }
 }

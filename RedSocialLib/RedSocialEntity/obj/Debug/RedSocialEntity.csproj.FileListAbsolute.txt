@@ -24,3 +24,10 @@ C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\Red
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialEntity\obj\Debug\RedSocialEntity.csprojResolveAssemblyReference.cache
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialEntity\obj\Debug\RedSocialEntity.dll
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialEntity\obj\Debug\RedSocialEntity.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialEntity\bin\Debug\RedSocialEntity.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialEntity\bin\Debug\RedSocialEntity.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialEntity\bin\Debug\RedSocialComun.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialEntity\bin\Debug\RedSocialComun.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialEntity\obj\Debug\RedSocialEntity.csprojResolveAssemblyReference.cache
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialEntity\obj\Debug\RedSocialEntity.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialEntity\obj\Debug\RedSocialEntity.pdb

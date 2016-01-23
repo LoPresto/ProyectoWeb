@@ -25,3 +25,12 @@ C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\Red
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialWebUtil\obj\Debug\RedSocialWebUtil.csprojResolveAssemblyReference.cache
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialWebUtil\obj\Debug\RedSocialWebUtil.dll
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialWebUtil\obj\Debug\RedSocialWebUtil.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Debug\RedSocialWebUtil.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Debug\RedSocialWebUtil.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Debug\RedSocialComun.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Debug\RedSocialEntity.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Debug\RedSocialComun.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Debug\RedSocialEntity.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\obj\Debug\RedSocialWebUtil.csprojResolveAssemblyReference.cache
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\obj\Debug\RedSocialWebUtil.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\obj\Debug\RedSocialWebUtil.pdb

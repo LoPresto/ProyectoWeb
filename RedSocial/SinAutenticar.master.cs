@@ -29,4 +29,14 @@ public partial class SinAutenticar : System.Web.UI.MasterPage
             WebHelper.MostrarMensaje(Page, ex.Message);
         }
     }
+
+    protected void btnRegistrarse_Click(object sender, EventArgs e)
+    {
+        Server.Transfer("Registracion.aspx");
+    }
+
+    protected void btnLogin_Click(object sender, EventArgs e)
+    {
+        Server.Transfer("loguin_test.aspx");
+    }
 }

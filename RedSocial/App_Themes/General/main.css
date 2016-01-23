@@ -14,6 +14,9 @@ img{
 .imgchicas{
 	max-width: 50%; 
 }
+.imgprincipal{
+	max-width: 100%; 
+}
 
 .fondo_verde1{
 	background-color:#4AB230;
@@ -240,3 +243,21 @@ body{
 	margin: auto;
 }
 
+.no-padding{
+	padding:none;
+	margin: 0 auto;
+}
+
+
+.btn-sinborde{
+outline: none;
+border: none;
+}
+
+button:hover{
+	background-color:color-gris-obscuro;
+}
+
+a:hover{
+	text-decoration: none;
+}

@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="ConexionDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicacionesDA.cs" />
     <Compile Include="UsuarioDA.cs" />
   </ItemGroup>
   <ItemGroup>

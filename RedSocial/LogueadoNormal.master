@@ -11,18 +11,18 @@
 	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <title>LoPresto.com</title>
 </head>
-<body>
+<body class="ubuntu  fondo_blanco ">
     <form id="form1" runat="server">
     <div>
                <asp:ContentPlaceHolder id="Cabecera" runat="server">
             <div id="header" class="">
 <nav class="fondo_verde1 padding-largo text-center">
 	<ul class="no-lista color-blanco">
-		<li class="col-md-3 text-shadow flotar-izquieda ubuntu logo-menu color_indigo"><a href="index.html" class="color_indigo pacifico">LoPresto </a></li>
+		<li class="col-md-3 text-shadow flotar-izquieda ubuntu logo-menu color_indigo"><a href="Perfil.aspx" class="color_indigo pacifico">LoPresto </a></li>
 
 		<li class="col-md-3 inline-block text-center color_indigo">
 			<div class="quitar-float inline-block text-center">
@@ -30,16 +30,16 @@
 			</div>
 
 			<div class="quitar-float inline-block text-center">
-				<button type="submit" class="btn btn-default quitar-float inline-block fondo-gris-claro" href="index.html"><i class="fa fa-binoculars color_indigo"></i>
+				<button type="submit" class="btn btn-default quitar-float inline-block fondo-gris-claro" href="Perfil.aspx"><i class="fa fa-binoculars color_indigo"></i>
 				</button>
 			</div>
 		</li>
 
 		<li class="col-md-1  flotar-derecha color_indigo "><button type="button" class="btn btn-default fondo-gris-claro largo-80" ><i class="fa fa-question-circle color_indigo"></i></button></li>
 
-		<li class="col-md-1  flotar-derecha color_indigo"><button type="button" class="btn btn-default fondo-gris-claro color_indigo largo-80" ><i class="fa fa-user color_indigo"></i></button></li>
+		<li class="col-md-1  flotar-derecha color_indigo"><button type="button" class="btn btn-default fondo-gris-claro color_indigo largo-80" ><i class="fa fa-bullhorn color_indigo"></i></button></li>
 
-		<li class="col-md-1  flotar-derecha color_indigo"><button type="button" class="btn btn-default fondo-gris-claro color_indigo largo-80" ><i class="fa fa-user-plus "></i></button></li>
+		<li class="col-md-1  flotar-derecha color_indigo"><button id="Cerrar_SesionLinkButton" type="submit" class="btn btn-default fondo-gris-claro color_indigo largo-80" runat="server"   onserverclick="btnCerrar_Sesion" required><i class="fa fa-sign-out"></i></button></li>
 
 	</ul>
 </nav>
@@ -55,7 +55,7 @@
             
               <nav class="fondo_verde1 padding-largo text-center">
 	            <ul class="no-lista color-blanco">
-		            <li class="col-md-3 text-shadow flotar-izquieda ubuntu logo-menu color-blanco"><a href="index.html" class="color_indigo pacifico">LoPresto</a></li>
+		            <li class="col-md-3 text-shadow flotar-izquieda ubuntu logo-menu color-blanco"><a href="Perfil.aspx" class="color_indigo pacifico">LoPresto</a></li>
 
 		            <li class="col-md-3 inline-block">
 			            <button type="button" class="btn btn-default  subtitulos color_indigo fondo-gris-claro largo-80" ><i class="fa fa-question-circle color_indigo"></i></button>

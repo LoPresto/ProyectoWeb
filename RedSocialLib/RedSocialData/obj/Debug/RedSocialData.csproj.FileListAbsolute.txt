@@ -16,3 +16,7 @@ C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\Red
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialData\bin\Debug\RedSocialData.pdb
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialData\obj\Debug\RedSocialData.dll
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialData\obj\Debug\RedSocialData.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialData\bin\Debug\RedSocialData.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialData\bin\Debug\RedSocialData.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialData\obj\Debug\RedSocialData.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialData\obj\Debug\RedSocialData.pdb

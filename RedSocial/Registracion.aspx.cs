@@ -37,14 +37,14 @@ public partial class Registracion : System.Web.UI.Page
             usuario.Nombre = txtNombre.Text;
             usuario.Apellido = txtApellido.Text;
             usuario.Email = txtEmail.Text;
-            usuario.Password = txtPassword.Text;
-            usuario.FechaNacimiento = Util.ObtenerFecha(
+            usuario.Pasword = txtPassword.Text;
+            usuario.Fnac = Util.ObtenerFecha(
                 int.Parse(ddlAnio.SelectedValue),
                 int.Parse(ddlMes.SelectedValue),
                 int.Parse(ddlDia.SelectedValue));
             usuario.Sexo = (ControlsHelper.RadioSeleccionado("Debe seleccionar el sexo.", radMujer, radHombre) == radMujer ? 'F' : 'M');
 
-            boUsuario.Registrar(usuario, txtEmailVerificacion.Text);
+              boUsuario.Registrar(usuario, txtEmailVerificacion.Text);
 
             SessionHelper.AlmacenarUsuarioAutenticado(boUsuario.Autenticar(txtEmail.Text, txtPassword.Text));
             System.Web.Security.FormsAuthentication.RedirectFromLoginPage(SessionHelper.UsuarioAutenticado.Email, false);

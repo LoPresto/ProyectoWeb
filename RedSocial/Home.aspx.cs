@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using RedSocialBusiness;
+using RedSocialEntity;
+using RedSocialWebUtil;
 
 public partial class Home : System.Web.UI.Page
 {
@@ -11,4 +14,11 @@ public partial class Home : System.Web.UI.Page
     {
 
     }
+
+    protected void btnRegistrarse_Click(object sender, EventArgs e)
+    {
+        Server.Transfer("Registracion.aspx");
+    }
+
+   
 }

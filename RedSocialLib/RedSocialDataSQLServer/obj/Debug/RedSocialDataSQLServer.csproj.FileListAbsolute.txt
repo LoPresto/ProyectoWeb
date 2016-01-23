@@ -36,3 +36,14 @@ C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\Red
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.csprojResolveAssemblyReference.cache
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.dll
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialDataSQLServer.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialDataSQLServer.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialData.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialEntity.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialComun.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialData.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialEntity.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialComun.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.csprojResolveAssemblyReference.cache
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.pdb
