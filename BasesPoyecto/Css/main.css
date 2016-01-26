@@ -83,3 +83,7 @@ a{
 .texto-menu{
 	font-size: 15px;
 }
+
+.imagenformulario{
+ 	max-width: 100%; 
+ }

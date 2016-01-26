@@ -24,7 +24,7 @@
 	<div class="col-md-4 inline-block espacio-arriba espacio-abajo">
     <h3 class=" text-center pacifico">Publicar
     </h3>
-    <button id="PublicarButton" type="submit" class="btn btn-default fondo_blanco btn-sinborde btn-plano largo-80"  runat="server"   onserverclick="btnCerrar_Sesion" required>
+    <button id="PublicarButton" type="submit" class="btn btn-default fondo_blanco btn-sinborde btn-plano largo-80"  runat="server"   onserverclick="btnPublicar_Click" required>
 	<span class="fa-stack fa-lg fa-5x">
 	  <i class="fa fa-square fa-stack-2x"></i>
 	  <i class="fa fa-bullhorn fa-stack-1x fa-inverse"></i>

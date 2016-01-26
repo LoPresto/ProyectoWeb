@@ -13,12 +13,16 @@
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
     <title>LoPresto.com</title>
 </head>
 <body class="ubuntu  fondo_blanco ">
     <form id="form1" runat="server">
 
         <asp:ContentPlaceHolder id="Cabecera" runat="server">
+           
             <div id="header" class="">
             <nav class="fondo_verde1 padding-largo text-center">
 	                <ul class="no-lista color-blanco">
@@ -52,6 +56,8 @@
 
         
         <asp:ContentPlaceHolder id="Footer" runat="server">
+
+               <footer>
             
               <nav class="fondo_verde1 padding-largo text-center">
 	            <ul class="no-lista color-blanco">
@@ -87,6 +93,7 @@
 		
 	            </ul>
             </nav>
+            </footer>
            
         </asp:ContentPlaceHolder>
     </form>

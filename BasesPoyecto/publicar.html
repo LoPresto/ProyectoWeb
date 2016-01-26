@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="css\bootstrap.min.css">
+	<link rel="stylesheet" href="css\main.css">
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<title>Prueba</title>
+</head>
+<body class="fondo-gris-claro lato">
+
+
+    <div class="col-md-8 inline-block espacio-arriba espacio-abajo">
+
+
+        <div class="lato">
+               <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
+                <div>
+                <p>Titulo:</p><input type="text" name="name_control" class="col-md-10" autofocus required />
+                <br />
+                <br />
+                <p>Descripcion del producto</p><textarea name="comentarios" class="col-md-10" rows="10" cols="40">Escribe una descripcion del producto y las condiciones de alquiler</textarea>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <p class="inline-block ">Fecha: </p> <input type="date" name="date_control" />
+                  <br />
+                <br />
+                <p lass="inline-block "> Precio de alquiler por día </p><input type="number" pattern="(^\d+(\.|\,)\d{2}$)">
+                   <br />
+                <br />
+                <input type="submit" value="Publicar !" />
+                </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-4  espacio-arriba espacio-abajo">
+    <img src="Imagenes/prd_nopic.jpg" alt="" class="imagenformulario img-rounded" >
+    </div>
+
+</body>
+</html>

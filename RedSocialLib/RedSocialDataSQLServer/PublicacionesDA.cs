@@ -28,8 +28,9 @@ namespace RedSocialDataSQLServer
             publicacion.PrecioD = cursor.GetFloat(cursor.GetOrdinal("PrecioD"));
             publicacion.PrecioS = cursor.GetFloat(cursor.GetOrdinal("PrecioS"));
             publicacion.PecioM = cursor.GetFloat(cursor.GetOrdinal("PecioM"));
-            publicacion.FechaDesde = cursor.GetDateTime(cursor.GetOrdinal("FechaDesde"));
-            publicacion.FechaHasta = cursor.GetDateTime(cursor.GetOrdinal("FechaHasta"));
+            publicacion.FechaDesde = cursor.GetString(cursor.GetOrdinal("FechaDesde"));
+             publicacion.FechaHasta = cursor.GetString(cursor.GetOrdinal("FechaHasta"));
+            //publicacion.FechaHasta = cursor.GetDateTime(cursor.GetOrdinal("FechaHasta"));
             publicacion.Alquilado = cursor.GetBoolean(cursor.GetOrdinal("Alquilado"));
             publicacion.Suspendido = cursor.GetBoolean(cursor.GetOrdinal("Suspendido"));
             publicacion.Id_publicacion = cursor.GetInt32(cursor.GetOrdinal("Id_cat_lvl3"));
@@ -54,8 +55,8 @@ namespace RedSocialDataSQLServer
                         comando.Parameters["@Titulo"].Value = publicacion.Titulo.Trim();
                         comando.Parameters["@Descripcion"].Value = publicacion.Descripcion.Trim();
                         comando.Parameters["@PrecioD"].Value = publicacion.PrecioD;
-                        comando.Parameters["@PrecioS"].Value = publicacion.PrecioD;
-                        comando.Parameters["@PrecioM"].Value = publicacion.PrecioS;
+                        comando.Parameters["@PrecioS"].Value = publicacion.PrecioS;
+                        comando.Parameters["@PrecioM"].Value = publicacion.PecioM;
                         comando.Parameters["@FechaDesde"].Value = publicacion.FechaDesde;
                         comando.Parameters["@FechaHasta"].Value = publicacion.FechaHasta;
                         comando.Parameters["@Alquilado"].Value = publicacion.Alquilado;
