@@ -43,4 +43,26 @@ public partial class Biografia : System.Web.UI.Page
         Server.Transfer("Publicar.aspx");
     }
 
+
+    protected void btn_BuscarPublicaciones_Click(object sender, EventArgs e)
+    {
+        Server.Transfer("Busqueda.aspx");
+    }
+
+
+    protected void btn_MisPublicaciones_Click(object sender, EventArgs e)
+    {
+        Server.Transfer("Publicar.aspx");
+    }
+
+
+    protected void btn_MisAlquileres_Click(object sender, EventArgs e)
+    {
+        Server.Transfer("Publicar.aspx");
+    }
+
+    protected void btn_MisPublicacionesAlquiladas_Click(object sender, EventArgs e)
+    {
+        Server.Transfer("Publicar.aspx");
+    }
 }

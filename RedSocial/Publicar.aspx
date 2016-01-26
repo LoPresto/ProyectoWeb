@@ -39,7 +39,7 @@
 
                 <br />
                 <br />
-               <asp:LinkButton ID="Publicar"  Text="Publicar !" class="btn btn-primary btn-block" Height = "25%" runat="server" OnClick="btnCrearViaje_clik" required></asp:LinkButton>
+               <asp:LinkButton ID="Publicar"  Text="Publicar !" class="btn btn-primary btn-block" Height = "25%" runat="server" OnClick="btnCrearPublicacion_click" required></asp:LinkButton>
                 </div>
                 </form>
         </div>

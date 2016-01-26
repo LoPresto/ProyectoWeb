@@ -1,13 +1,16 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Configuration;
-using System.IO;
+using System.Data.SqlClient;
+using System.Web;
+using System.Data;
 using RedSocialEntity;
 using RedSocialData;
+using System.Transactions;
+using System.Configuration;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace RedSocialDataSQLServer
 {
@@ -73,6 +76,34 @@ namespace RedSocialDataSQLServer
             catch (Exception ex)
             {
                 throw new ExcepcionDA("Se produjo un error al insertar la publicación.", ex);
+            }
+        }
+
+        public void BuscarPublicacion(GridView GridView1, string SearchWord)
+        {
+            String strConnString = ConfigurationManager.ConnectionStrings["ConexionRedSocial"].ConnectionString;
+            SqlConnection con = new SqlConnection(strConnString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "BuscarPublicacion";
+            //cmd.Parameters.Add("@id_usr", SqlDbType.Int).Value = id_usr;
+            cmd.Parameters.Add("@SearchWord", SqlDbType.Text).Value = SearchWord.Trim();
+            cmd.Connection = con;
+            try
+            {
+                con.Open();
+                GridView1.EmptyDataText = "No hay productos publicados que se ajusten a tu busqueda. Intentá de nuevo.";
+                GridView1.DataSource = cmd.ExecuteReader();
+                GridView1.DataBind();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+                con.Dispose();
             }
         }
         #endregion Métodos Públicos

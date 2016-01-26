@@ -12,7 +12,7 @@
 	<div class="col-md-4 inline-block espacio-arriba espacio-abajo">
      <h3 class=" text-center pacifico">Buscar Publicacion
     </h3>
-    <button id="BuscarButton" type="submit" class="btn btn-default btn-plano fondo_blanco btn-sinborde largo-80" runat="server"   onserverclick="btnCerrar_Sesion" required>
+    <button id="BuscarButton" type="submit" class="btn btn-default btn-plano fondo_blanco btn-sinborde largo-80" runat="server"   onserverclick="btn_BuscarPublicaciones_Click" required>
 	    <span class="fa-stack fa-lg fa-5x">
 	          <i class="fa fa-square fa-stack-2x"></i>
 	          <i class="fa fa-binoculars fa-stack-1x fa-inverse"></i>

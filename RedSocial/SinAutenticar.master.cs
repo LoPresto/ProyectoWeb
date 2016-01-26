@@ -37,6 +37,6 @@ public partial class SinAutenticar : System.Web.UI.MasterPage
 
     protected void btnLogin_Click(object sender, EventArgs e)
     {
-        Server.Transfer("loguin_test.aspx");
+        Server.Transfer("login.aspx");
     }
 }

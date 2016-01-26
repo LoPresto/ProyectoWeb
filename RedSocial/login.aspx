@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SinAutenticar.master" AutoEventWireup="true" CodeFile="loguin_test.aspx.cs" Inherits="loguin_test" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SinAutenticar.master" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="loguin_test" %>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Cuerpo" Runat="Server">

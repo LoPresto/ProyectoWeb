@@ -18,7 +18,7 @@ public partial class Procesos_Publicar_Default : System.Web.UI.Page
 
     }
 
-    protected void btnCrearViaje_clik(object sender, EventArgs e)
+    protected void btnCrearPublicacion_click(object sender, EventArgs e)
     {
         publicacion.Id_usr = SessionHelper.UsuarioAutenticado.Id_usr;
         publicacion.Titulo = txtTitulo.Text;
@@ -35,6 +35,7 @@ public partial class Procesos_Publicar_Default : System.Web.UI.Page
         Server.Transfer("Perfil.aspx");
 
     }
+
 
 
 }

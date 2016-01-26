@@ -19,4 +19,9 @@ public partial class LogueadoAcciones : System.Web.UI.MasterPage
         Server.Transfer("Home.aspx");
 
     }
+
+    protected void btnPerfil_Click(object sender, EventArgs e)
+    {
+        Server.Transfer("Perfil.aspx");
+    }
 }

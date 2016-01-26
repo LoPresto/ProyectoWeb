@@ -5,7 +5,10 @@ using System.Text;
 using RedSocialEntity;
 using RedSocialData;
 using RedSocialDataSQLServer;
-
+using System.Data.SqlClient;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace RedSocialBusiness
 {
@@ -31,6 +34,11 @@ namespace RedSocialBusiness
             {
                 throw new ExcepcionBO("No se pudo realizar la publicacion del producto.", ex);
             }
+        }
+
+        public void BuscarPublicacion(GridView GridView1, string SearchWord)
+        {
+            daPublicacion.BuscarPublicacion(GridView1, SearchWord);
         }
 
 
