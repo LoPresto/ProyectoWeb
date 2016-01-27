@@ -24,15 +24,16 @@
 	</div>
 </div>
 
+    <div class="col-md-1">
+    </div>
+<div id="ResultadoBusqueda" class="col-md-8 inline-block text-center" >
 
-<div id="ResultadoBusqueda">
-
-    <asp:GridView ID="GridView1"  class="table table-hover" runat="server">
+    <asp:GridView ID="GridView1" Font-Size="9" HorizontalAlign="Center" Width ="100%" class="table table-hover" runat="server" AutoGenerateColumns="false">
     <Columns>
     <asp:BoundField DataField="Id_publicacion" HeaderText="Codigo de Publicación" Visible ="True"/>
     <asp:BoundField DataField="Titulo" HeaderText="Titulo" />
     <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" />
-    <asp:BoundField DataField="PrecioD" HeaderText="PrecioD" />
+    <asp:BoundField DataField="PrecioD" HeaderText="PrecioD" DataFormatString="${0:0.00}" />
     <asp:BoundField DataField="FechaHasta" HeaderText="Fecha Maxima" dataformatstring="{0:dd/MM/yyyy}" />
     </Columns>
     </asp:GridView>

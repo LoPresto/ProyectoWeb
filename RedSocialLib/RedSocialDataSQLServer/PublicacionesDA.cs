@@ -106,6 +106,38 @@ namespace RedSocialDataSQLServer
                 con.Dispose();
             }
         }
+
+        public void VerMisPublicaciones(GridView GridView3, int Id_usr)
+        {
+            String strConnString = ConfigurationManager.ConnectionStrings["ConexionRedSocial"].ConnectionString;
+            SqlConnection con = new SqlConnection(strConnString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "MisPublicaciones";
+            cmd.Parameters.Add("@id_usr", SqlDbType.Int).Value = Id_usr;
+
+
+            cmd.Connection = con;
+            try
+            {
+                con.Open();
+                GridView3.EmptyDataText = "Usted no posee ningun producto publicado";
+                GridView3.DataSource = cmd.ExecuteReader();
+                GridView3.DataBind();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+                con.Dispose();
+            }
+        }
+        
+
+        
         #endregion Métodos Públicos
     }
 

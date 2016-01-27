@@ -52,7 +52,7 @@ public partial class Biografia : System.Web.UI.Page
 
     protected void btn_MisPublicaciones_Click(object sender, EventArgs e)
     {
-        Server.Transfer("Publicar.aspx");
+        Server.Transfer("VerMisPublic.aspx");
     }
 
 

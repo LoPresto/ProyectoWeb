@@ -36,7 +36,7 @@
 	<div class="col-md-4 inline-block espacio-arriba espacio-abajo">
     <h3 class=" text-center pacifico">Revisar mis publicaciones
     </h3>
-    <button id="EditarPublicacionesButton" type="submit" class="btn btn-default fondo_blanco btn-sinborde largo-80" runat="server"   onserverclick="btnCerrar_Sesion" required>
+    <button id="EditarPublicacionesButton" type="submit" class="btn btn-default fondo_blanco btn-sinborde largo-80" runat="server"   onserverclick="btn_MisPublicaciones_Click" required>
 	<span class="fa-stack fa-lg fa-5x">
 	  <i class="fa fa-square fa-stack-2x"></i>
 	  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>

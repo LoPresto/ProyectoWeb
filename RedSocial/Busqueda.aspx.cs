@@ -20,7 +20,6 @@ public partial class Busqueda : System.Web.UI.Page
 
     }
 
-
     protected void btnBuscar_Click(object sender, EventArgs e)
     {
         string SearchWord = txtSearchWord.Text;
