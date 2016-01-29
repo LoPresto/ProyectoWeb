@@ -40,15 +40,15 @@ public partial class Busqueda : System.Web.UI.Page
 
         if (GridView1.SelectedRow != null)
         {
-            GlobalBo._Id_Publicacion = Convert.ToInt32(Gridrow.Cells[0]);
+            GlobalBo._Id_Publicacion = Convert.ToInt32(Gridrow.Cells[0].Text);
             GlobalBo._Id_usr = SessionHelper.UsuarioAutenticado.Id_usr;//Gridrow.Cells[0].Text;
             GlobalBo._Titulo          = Gridrow.Cells[1].Text;
             GlobalBo._Descripcion     = Gridrow.Cells[2].Text;
-            GlobalBo._PrecioD         = Convert.ToInt32(Gridrow.Cells[3]);
-            GlobalBo._PrecioS         = Convert.ToInt32(Gridrow.Cells[4]);
-            GlobalBo._PrecioM         = Convert.ToInt32(Gridrow.Cells[5]);
-            GlobalBo._FechaDesde      = Convert.ToDateTime(Gridrow.Cells[6]);
-            GlobalBo._FechaHasta      = Convert.ToDateTime(Gridrow.Cells[7]);
+            GlobalBo._PrecioD         = Convert.ToInt32(Gridrow.Cells[3].Text.Substring(1));
+            GlobalBo._PrecioS = Convert.ToInt32(Gridrow.Cells[4].Text.Substring(1));
+            GlobalBo._PrecioM         = Convert.ToInt32(Gridrow.Cells[5].Text.Substring(1));
+            GlobalBo._FechaDesde      = Convert.ToDateTime(Gridrow.Cells[6].Text);
+            GlobalBo._FechaHasta      = Convert.ToDateTime(Gridrow.Cells[7].Text.Substring(0,10));
             GlobalBo._Suspendido      = Gridrow.Cells[8].Text;  
             
             Server.Transfer("ModPublicacion.aspx");

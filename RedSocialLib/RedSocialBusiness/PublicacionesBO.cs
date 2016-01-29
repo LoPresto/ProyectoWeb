@@ -36,6 +36,36 @@ namespace RedSocialBusiness
             }
         }
 
+        public void Modificar(PublicacionEntity publicacion)
+        {
+            try
+            {
+                //publicacion.ValidarDatos();
+
+                daPublicacion.Modificar(publicacion);
+
+            }
+            catch (ExcepcionDA ex)
+            {
+                throw new ExcepcionBO("No se pudo realizar la publicacion del producto.", ex);
+            }
+        }
+
+        public void Suspender(PublicacionEntity publicacion)
+        {
+            try
+            {
+                //publicacion.ValidarDatos();
+
+                daPublicacion.Suspender(publicacion);
+
+            }
+            catch (ExcepcionDA ex)
+            {
+                throw new ExcepcionBO("No se pudo realizar la publicacion del producto.", ex);
+            }
+        }
+
         public void BuscarPublicacion(GridView GridView1, string SearchWord)
         {
             daPublicacion.BuscarPublicacion(GridView1, SearchWord);

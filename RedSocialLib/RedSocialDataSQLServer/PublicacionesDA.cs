@@ -135,7 +135,66 @@ namespace RedSocialDataSQLServer
                 con.Dispose();
             }
         }
-        
+
+        public void Modificar(PublicacionEntity publicacion)
+        {
+            try
+            {
+                using (SqlConnection conexion = ConexionDA.ObtenerConexion())
+                {
+                    using (SqlCommand comando = new SqlCommand("Modificar_Publicacion", conexion))
+                    {
+                        comando.CommandType = CommandType.StoredProcedure;
+                        SqlCommandBuilder.DeriveParameters(comando);
+
+
+                        comando.Parameters["@Id_publicacion"].Value = publicacion.Id_publicacion;
+                        comando.Parameters["@Titulo"].Value = publicacion.Titulo.Trim();
+                        comando.Parameters["@Descripcion"].Value = publicacion.Descripcion.Trim();
+                        comando.Parameters["@PrecioD"].Value = publicacion.PrecioD;
+                        comando.Parameters["@PrecioS"].Value = publicacion.PrecioS;
+                        comando.Parameters["@PrecioM"].Value = publicacion.PecioM;
+                        comando.Parameters["@FechaHasta"].Value = publicacion.FechaHasta;
+
+                        comando.ExecuteNonQuery();
+                        publicacion.Id_publicacion = Convert.ToInt32(comando.Parameters["@RETURN_VALUE"].Value);
+                    }
+
+                    conexion.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ExcepcionDA("Se produjo un error al Modificar la publicación.", ex);
+            }
+        }
+
+        public void Suspender(PublicacionEntity publicacion)
+        {
+            try
+            {
+                using (SqlConnection conexion = ConexionDA.ObtenerConexion())
+                {
+                    using (SqlCommand comando = new SqlCommand("Suspender_Publicacion", conexion))
+                    {
+                        comando.CommandType = CommandType.StoredProcedure;
+                        SqlCommandBuilder.DeriveParameters(comando);
+
+
+                        comando.Parameters["@Id_publicacion"].Value = publicacion.Id_publicacion;
+                 
+                        comando.ExecuteNonQuery();
+                       
+                    }
+
+                    conexion.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ExcepcionDA("Se produjo un error al Suspender la publicación.", ex);
+            }
+        }
 
         
         #endregion Métodos Públicos

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LogueadoAcciones.master" AutoEventWireup="true" CodeFile="ModPublicacion.aspx.cs" Inherits="Procesos_Publicar_Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LogueadoAcciones.master" AutoEventWireup="true" CodeFile="ModPublicacion.aspx.cs" Inherits="Procesos_Publicar_Default" EnableEventValidation="false" validateRequest="false"%>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Cuerpo" Runat="Server">
@@ -39,7 +39,8 @@
 
                 <br />
                 <br />
-               <asp:LinkButton ID="Publicar"  Text="Publicar !" class="btn btn-primary btn-block" Height = "25%" runat="server" OnClick="btnCrearPublicacion_click" required></asp:LinkButton>
+               <asp:LinkButton ID="ModificarPub"  Text="Publicar !" class="btn btn-primary btn-block col-md-5 center-block" Height = "25%" runat="server" OnClick="btnModPublicacion_click" required></asp:LinkButton>
+               <asp:LinkButton ID="ElimiarPub"  Text="Elimiar" class="btn btn-primary btn-block col-md-5 center-block" Height = "25%" runat="server" OnClick="btnSuspPublicacion_click" required></asp:LinkButton>
                 </div>
                 </form>
         </div>

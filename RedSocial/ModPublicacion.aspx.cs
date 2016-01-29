@@ -15,15 +15,22 @@ public partial class Procesos_Publicar_Default : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (!Page.IsPostBack)
+        {
+            txtTitulo.Text = GlobalBo._Titulo.Trim();
+            txtDescripcion.Text = GlobalBo._Descripcion.Trim();
+            txtDate.Text = Convert.ToString(GlobalBo._FechaHasta).Substring(0, 10).Trim();
+            numPrecio.Text = Convert.ToString(GlobalBo._PrecioD);
+            //publicacion.PrecioS = publicacion.PrecioD * 7;
+            //publicacion.PecioM = publicacion.PrecioS * 4;
+        }
     }
 
-    protected void btnCrearPublicacion_click(object sender, EventArgs e)
+    protected void btnModPublicacion_click(object sender, EventArgs e)
     {
-        publicacion.Id_usr = SessionHelper.UsuarioAutenticado.Id_usr;
+        publicacion.Id_publicacion = GlobalBo._Id_Publicacion;
         publicacion.Titulo = txtTitulo.Text;
         publicacion.Descripcion = txtDescripcion.Text;
-        publicacion.FechaDesde = Convert.ToString(DateTime.Now.Date);
         publicacion.FechaHasta = txtDate.Text;
         publicacion.PrecioD = Convert.ToInt64(numPrecio.Text);
         publicacion.PrecioS = publicacion.PrecioD*7;
@@ -31,8 +38,24 @@ public partial class Procesos_Publicar_Default : System.Web.UI.Page
         //publicacion.Fecha = Fecha2.Text;
         //publicacion.Reservado = "NO";
 
-        publicacionBo.Publicar(publicacion);
-        Server.Transfer("Perfil.aspx");
+        publicacionBo.Modificar(publicacion);
+        Server.Transfer("VerMisPublic.aspx");
+
+    }
+
+
+    protected void btnSuspPublicacion_click(object sender, EventArgs e)
+    {
+        publicacion.Id_publicacion = GlobalBo._Id_Publicacion;
+        publicacion.Titulo = txtTitulo.Text;
+        publicacion.Descripcion = txtDescripcion.Text;
+        publicacion.FechaHasta = txtDate.Text;
+        publicacion.PrecioD = Convert.ToInt64(numPrecio.Text);
+        publicacion.PrecioS = publicacion.PrecioD * 7;
+        publicacion.PecioM = publicacion.PrecioS * 4;
+
+        publicacionBo.Suspender(publicacion);
+        Server.Transfer("VerMisPublic.aspx");
 
     }
 
