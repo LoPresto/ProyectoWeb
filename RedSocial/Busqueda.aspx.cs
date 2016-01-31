@@ -22,8 +22,44 @@ public partial class Busqueda : System.Web.UI.Page
 
     protected void btnBuscar_Click(object sender, EventArgs e)
     {
+        int id_usr = SessionHelper.UsuarioAutenticado.Id_usr;
         string SearchWord = txtSearchWord.Text;
-        Publicacion.BuscarPublicacion(GridView1, SearchWord);
+        Publicacion.BuscarPublicacion(GridView2, SearchWord, id_usr);
     }
+
+    protected void OnRowDataBound(object sender, System.Web.UI.WebControls.GridViewRowEventArgs e)
+    {
+        if (e.Row.RowType == DataControlRowType.DataRow)
+        {
+            e.Row.Attributes["onclick"] = Page.ClientScript.GetPostBackClientHyperlink(GridView2, "Select$" + e.Row.RowIndex);
+            e.Row.ToolTip = "Click to select this row.";
+        }
+    }
+
+    protected void OnSelectedIndexChanged(object sender, EventArgs e)
+    {
+        GridViewRow Gridrow = GridView2.SelectedRow;
+
+        if (GridView2.SelectedRow != null)
+        {
+            GlobalBo._Id_Publicacion = Convert.ToInt32(Gridrow.Cells[0].Text);
+            //GlobalBo._Id_usr = SessionHelper.UsuarioAutenticado.Id_usr;//Gridrow.Cells[0].Text;
+            GlobalBo._Titulo = Gridrow.Cells[1].Text;
+            GlobalBo._Descripcion = Gridrow.Cells[2].Text;
+            GlobalBo._Descripcion = Gridrow.Cells[2].Text;
+            GlobalBo._PrecioD = Convert.ToInt32(Gridrow.Cells[3].Text.Substring(1));
+            GlobalBo._PrecioS = GlobalBo._PrecioD * 7;
+            GlobalBo._PrecioM = GlobalBo._PrecioD * 31;
+            GlobalBo._FechaHasta = Convert.ToDateTime(Gridrow.Cells[7].Text.Substring(0, 10));
+
+            Server.Transfer("Publicacion.aspx");
+
+        }
+        else
+        {
+            ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Por favor seleccione un registro')", true);
+        }
+    }
+
 
 }

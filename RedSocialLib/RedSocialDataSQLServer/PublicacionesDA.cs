@@ -79,14 +79,14 @@ namespace RedSocialDataSQLServer
             }
         }
 
-        public void BuscarPublicacion(GridView GridView1, string SearchWord)
+        public void BuscarPublicacion(GridView GridView1, string SearchWord, int id_usr)
         {
             String strConnString = ConfigurationManager.ConnectionStrings["ConexionRedSocial"].ConnectionString;
             SqlConnection con = new SqlConnection(strConnString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "BuscarPublicacion";
-            //cmd.Parameters.Add("@id_usr", SqlDbType.Int).Value = id_usr;
+            cmd.Parameters.Add("@id_usr", SqlDbType.Int).Value = id_usr;
             cmd.Parameters.Add("@SearchWord", SqlDbType.Text).Value = SearchWord.Trim();
             cmd.Connection = con;
             try
@@ -195,6 +195,36 @@ namespace RedSocialDataSQLServer
                 throw new ExcepcionDA("Se produjo un error al Suspender la publicación.", ex);
             }
         }
+
+
+        public void Alquilar(PublicacionEntity publicacion,AlquilerEntity alquiler)
+        {
+            try
+            {
+                using (SqlConnection conexion = ConexionDA.ObtenerConexion())
+                {
+                    using (SqlCommand comando = new SqlCommand("Alquilar_Publicacion", conexion))
+                    {
+                        comando.CommandType = CommandType.StoredProcedure;
+                        SqlCommandBuilder.DeriveParameters(comando);
+
+
+                        comando.Parameters["@Id_publicacion"].Value = publicacion.Id_publicacion;
+
+                        comando.ExecuteNonQuery();
+
+                    }
+
+                    conexion.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ExcepcionDA("Se produjo un error al Suspender la publicación.", ex);
+            }
+        }
+
+
 
         
         #endregion Métodos Públicos

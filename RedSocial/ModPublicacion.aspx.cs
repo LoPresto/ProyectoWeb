@@ -12,6 +12,7 @@ public partial class Procesos_Publicar_Default : System.Web.UI.Page
 {
     PublicacionEntity publicacion = new PublicacionEntity();
     PublicacionesBO publicacionBo = new PublicacionesBO();
+  
 
     protected void Page_Load(object sender, EventArgs e)
     {

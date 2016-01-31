@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LogueadoNormal.master" AutoEventWireup="true" CodeFile="Busqueda.aspx.cs" Inherits="Busqueda" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LogueadoNormal.master" AutoEventWireup="true" CodeFile="Busqueda.aspx.cs" Inherits="Busqueda" EnableEventValidation="false" %>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Cuerpo" Runat="Server">
@@ -28,7 +28,14 @@
     </div>
 <div id="ResultadoBusqueda" class="col-md-8 inline-block text-center" >
 
-    <asp:GridView ID="GridView1" Font-Size="9" HorizontalAlign="Center" Width ="100%" class="table table-hover" runat="server" AutoGenerateColumns="false">
+    <asp:GridView ID="GridView2" Font-Size="9" 
+    OnRowDataBound = "OnRowDataBound"
+    onselectedindexchanged="OnSelectedIndexChanged"
+    HorizontalAlign="Center" 
+    Width ="100%" 
+    class="table table-hover" 
+    runat="server" 
+    AutoGenerateColumns="false">
     <Columns>
     <asp:BoundField DataField="Id_publicacion" HeaderText="Codigo de Publicación" Visible ="True"/>
     <asp:BoundField DataField="Titulo" HeaderText="Titulo" />

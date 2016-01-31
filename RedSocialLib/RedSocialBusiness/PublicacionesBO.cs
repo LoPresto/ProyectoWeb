@@ -66,9 +66,9 @@ namespace RedSocialBusiness
             }
         }
 
-        public void BuscarPublicacion(GridView GridView1, string SearchWord)
+        public void BuscarPublicacion(GridView GridView1, string SearchWord, int id_usr)
         {
-            daPublicacion.BuscarPublicacion(GridView1, SearchWord);
+            daPublicacion.BuscarPublicacion(GridView1, SearchWord, id_usr);
         }
 
         public void VerMisPublicaciones(GridView GridView3, int id_usr)
@@ -76,6 +76,20 @@ namespace RedSocialBusiness
             daPublicacion.VerMisPublicaciones(GridView3, id_usr);
         }
 
+        public void Alquilar(PublicacionEntity publicacion, AlquilerEntity alquiler)
+        {
+            try
+            {
+                //publicacion.ValidarDatos();
 
+                daPublicacion.Alquilar(publicacion, alquiler);
+
+            }
+            catch (ExcepcionDA ex)
+            {
+                throw new ExcepcionBO("No se pudo realizar la publicacion del producto.", ex);
+            }
+
+        }
     }
 }
