@@ -20,7 +20,7 @@ public partial class Procesos_Publicar_Default : System.Web.UI.Page
         {
             txtTitulo.Text = GlobalBo._Titulo.Trim();
             txtDescripcion.Text = GlobalBo._Descripcion.Trim();
-            txtDate.Text = Convert.ToString(GlobalBo._FechaHasta).Substring(0, 10).Trim();
+            txtDate.Text = GlobalBo._FechaHasta.ToString("dd/MM/yyyy");
             numPrecio.Text = Convert.ToString(GlobalBo._PrecioD);
             //publicacion.PrecioS = publicacion.PrecioD * 7;
             //publicacion.PecioM = publicacion.PrecioS * 4;

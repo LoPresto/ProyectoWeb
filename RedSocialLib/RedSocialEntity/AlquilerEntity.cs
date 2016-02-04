@@ -25,7 +25,7 @@ namespace RedSocialEntity
         public int Id_alquiler { get; set; }
         public int Id_publicacion { get; set; }
         public int Id_usr { get; set; }
-        public int Costo { get; set; }
+        public float Costo { get; set; }
         public string FechaDesde { get; set; }
         public string FechaHasta { get; set; }
         public bool Confirmado { get; set; }

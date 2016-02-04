@@ -19,7 +19,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RedSocial", "RedSocial\", "
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "65348"
+		VWDPort = "7748"
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedSocialEntity", "RedSocialLib\RedSocialEntity\RedSocialEntity.csproj", "{795B76ED-AF6B-4D88-AE15-F686C6447C22}"

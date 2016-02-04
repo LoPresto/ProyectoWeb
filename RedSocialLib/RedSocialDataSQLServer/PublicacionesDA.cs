@@ -210,6 +210,10 @@ namespace RedSocialDataSQLServer
 
 
                         comando.Parameters["@Id_publicacion"].Value = publicacion.Id_publicacion;
+                        comando.Parameters["@id_usr_alquilador"].Value = alquiler.Id_usr;
+                        comando.Parameters["@costo"].Value = alquiler.Costo;
+                        comando.Parameters["@fecha_desde"].Value = alquiler.FechaDesde;
+                        comando.Parameters["@fecha_hasta"].Value = alquiler.FechaHasta;
 
                         comando.ExecuteNonQuery();
 
@@ -220,11 +224,67 @@ namespace RedSocialDataSQLServer
             }
             catch (Exception ex)
             {
-                throw new ExcepcionDA("Se produjo un error al Suspender la publicación.", ex);
+                throw new ExcepcionDA("Se produjo un error al alquilar el producto.", ex);
             }
         }
 
 
+        public void DatosAlquiler_Alq(UsuarioEntity alquilador, PublicacionEntity publicacion, AlquilerEntity alquiler)
+        {
+            try
+            {
+                using (SqlConnection conexion = ConexionDA.ObtenerConexion())
+                {
+                    using (SqlCommand comando = new SqlCommand("Alquilar_Publicacion", conexion))
+                    {
+                        comando.CommandType = CommandType.StoredProcedure;
+                        SqlCommandBuilder.DeriveParameters(comando);
+
+
+                        comando.Parameters["@Id_publicacion"].Value = publicacion.Id_publicacion;
+                        comando.Parameters["@id_usr_alquilador"].Value = alquiler.Id_usr;
+                        comando.Parameters["@costo"].Value = alquiler.Costo;
+                        comando.Parameters["@fecha_desde"].Value = alquiler.FechaDesde;
+                        comando.Parameters["@fecha_hasta"].Value = alquiler.FechaHasta;
+
+                        comando.ExecuteNonQuery();
+
+                    }
+
+                    conexion.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ExcepcionDA("Se produjo un error al alquilar el producto.", ex);
+            }
+        }
+
+        public void DatosAlquiler_public(UsuarioEntity alquilador, PublicacionEntity publicacion, AlquilerEntity alquiler)
+        {
+            String strConnString = ConfigurationManager.ConnectionStrings["ConexionRedSocial"].ConnectionString;
+            SqlConnection con = new SqlConnection(strConnString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "BuscarPublicacion";
+            //cmd.Parameters.Add("@id_usr", SqlDbType.Int).Value = id_usr;
+            //cmd.Parameters.Add("@SearchWord", SqlDbType.Text).Value = SearchWord.Trim();
+            cmd.Connection = con;
+            try
+            {
+                con.Open();
+              
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+                con.Dispose();
+            }
+        }
 
         
         #endregion Métodos Públicos

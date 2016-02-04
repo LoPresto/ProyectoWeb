@@ -39,6 +39,12 @@ public partial class Busqueda : System.Web.UI.Page
     protected void OnSelectedIndexChanged(object sender, EventArgs e)
     {
         GridViewRow Gridrow = GridView2.SelectedRow;
+        int indexcoma;
+        int largoprecio;
+        string preciocorto;
+        string fechahasta;
+        string cortador;
+        
 
         if (GridView2.SelectedRow != null)
         {
@@ -47,10 +53,13 @@ public partial class Busqueda : System.Web.UI.Page
             GlobalBo._Titulo = Gridrow.Cells[1].Text;
             GlobalBo._Descripcion = Gridrow.Cells[2].Text;
             GlobalBo._Descripcion = Gridrow.Cells[2].Text;
-            GlobalBo._PrecioD = Convert.ToInt32(Gridrow.Cells[3].Text.Substring(1));
+            largoprecio = Gridrow.Cells[3].Text.Length;
+            preciocorto = Gridrow.Cells[3].Text.Substring(1, largoprecio - 1);
+            indexcoma = preciocorto.IndexOf(",");
+            GlobalBo._PrecioD = Convert.ToInt32(Gridrow.Cells[3].Text.Substring(1,indexcoma-1));
             GlobalBo._PrecioS = GlobalBo._PrecioD * 7;
             GlobalBo._PrecioM = GlobalBo._PrecioD * 31;
-            GlobalBo._FechaHasta = Convert.ToDateTime(Gridrow.Cells[7].Text.Substring(0, 10));
+            GlobalBo._FechaHasta = Convert.ToDateTime(Gridrow.Cells[4].Text);
 
             Server.Transfer("Publicacion.aspx");
 

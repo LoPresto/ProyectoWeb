@@ -15,12 +15,18 @@ public partial class Publicacion : System.Web.UI.Page
     AlquilerEntity alquiler = new AlquilerEntity();
 
     //Variables de la vista
-    string txtTitulo;
-    string txtDescripcion;
-    int precioD;
-    int precioS;
-    int precioM;
-    DateTime FechaHasta;
+   public string txtTitulo;
+   public string txtDescripcion;
+   public int precioD;
+   public int precioS;
+   public int precioM;
+   public DateTime FechaHasta;
+   public int DiasFin;
+   public DateTime Hoy;
+   public TimeSpan ts;
+   public DateTime fechainicioalquiler;
+
+   public TimeSpan Cant_Dias_Alquiler;
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -32,23 +38,29 @@ public partial class Publicacion : System.Web.UI.Page
              precioD = GlobalBo._PrecioD;
              precioS = GlobalBo._PrecioS;
              precioM = GlobalBo._PrecioM;
+             Hoy = DateTime.Now;
+             ts = FechaHasta - Hoy;
+             DiasFin = ts.Days;
+             fechainicioalquiler = Hoy.AddDays(1);
+             txtDateInicio.Text = Hoy.ToString("dd/MM/yyyy");
+             txtDateFin.Text = fechainicioalquiler.ToString("dd/MM/yyyy");
 
-            //publicacion.PrecioS = publicacion.PrecioD * 7;
-            //publicacion.PecioM = publicacion.PrecioS * 4;
+           
         }
     }
 
     protected void btnAlquilar(object sender, EventArgs e)
     {
-        //publicacion.Id_publicacion = GlobalBo._Id_Publicacion;
-        //publicacion.Titulo = txtTitulo.Text;
-        //publicacion.Descripcion = txtDescripcion.Text;
-        //publicacion.FechaHasta = txtDate.Text;
-        //publicacion.PrecioD = Convert.ToInt64(numPrecio.Text);
-        //publicacion.PrecioS = publicacion.PrecioD * 7;
-        //publicacion.PecioM = publicacion.PrecioS * 4;
-        //publicacionBo.Alquilar(publicacion, alquiler);
-        Server.Transfer("Perfil.aspx");
+          publicacion.Id_publicacion = GlobalBo._Id_Publicacion;
+          GlobalBo._inicioAlqui = Convert.ToDateTime(txtDateInicio.Text);
+          GlobalBo._finaAlqui   = Convert.ToDateTime(txtDateFin.Text);
+          Cant_Dias_Alquiler = GlobalBo._finaAlqui - GlobalBo._inicioAlqui;
+          GlobalBo._cantdias = Convert.ToInt16(Cant_Dias_Alquiler.Days);
+          GlobalBo._cost = GlobalBo._PrecioD * GlobalBo._cantdias;
+          GlobalBo._feeService = GlobalBo._cost * 0.05F;
+          GlobalBo._totalcost = GlobalBo._cost + GlobalBo._feeService;
+ 
+        Server.Transfer("ConfirmacionAlq.aspx");
 
     }
 
