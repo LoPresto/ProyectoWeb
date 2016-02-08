@@ -1,0 +1,4 @@
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialComun\bin\Release\RedSocialComun.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialComun\bin\Release\RedSocialComun.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialComun\obj\Release\RedSocialComun.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialComun\obj\Release\RedSocialComun.pdb

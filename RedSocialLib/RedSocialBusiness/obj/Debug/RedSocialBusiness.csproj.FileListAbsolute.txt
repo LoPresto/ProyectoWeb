@@ -42,16 +42,4 @@ C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\Red
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.csprojResolveAssemblyReference.cache
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.dll
 C:\Users\Alvaro\Documents\oRT\Taller 4\Red_Social_2013_VS2010\Red Social ORT\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.pdb
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialBusiness.dll
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialBusiness.pdb
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialComun.dll
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialData.dll
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialDataSQLServer.dll
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialEntity.dll
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialComun.pdb
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialDataSQLServer.pdb
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialData.pdb
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialEntity.pdb
 C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.csprojResolveAssemblyReference.cache
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.dll
-C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.pdb

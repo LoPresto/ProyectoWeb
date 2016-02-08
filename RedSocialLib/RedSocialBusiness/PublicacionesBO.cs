@@ -71,6 +71,16 @@ namespace RedSocialBusiness
             daPublicacion.BuscarPublicacion(GridView1, SearchWord, id_usr);
         }
 
+        public void VerMisAlquilados(GridView GridView1, int id_usr)
+        {
+            daPublicacion.VerMisAlquilados(GridView1, id_usr);
+        }
+
+        public void VerMisAlquileres(GridView GridView1, int id_usr)
+        {
+            daPublicacion.VerMisAlquileres(GridView1, id_usr);
+        }
+
         public void VerMisPublicaciones(GridView GridView3, int id_usr)
         {
             daPublicacion.VerMisPublicaciones(GridView3, id_usr);

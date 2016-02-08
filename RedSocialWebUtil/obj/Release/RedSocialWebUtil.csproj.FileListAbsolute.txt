@@ -1,0 +1,9 @@
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Release\RedSocialWebUtil.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Release\RedSocialWebUtil.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Release\RedSocialComun.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Release\RedSocialEntity.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Release\RedSocialComun.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\bin\Release\RedSocialEntity.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\obj\Release\RedSocialWebUtil.csprojResolveAssemblyReference.cache
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\obj\Release\RedSocialWebUtil.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialWebUtil\obj\Release\RedSocialWebUtil.pdb

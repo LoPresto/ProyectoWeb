@@ -203,7 +203,7 @@ namespace RedSocialDataSQLServer
             {
                 using (SqlConnection conexion = ConexionDA.ObtenerConexion())
                 {
-                    using (SqlCommand comando = new SqlCommand("Alquilar_Publicacion", conexion))
+                    using (SqlCommand comando = new SqlCommand("Alquilar", conexion))
                     {
                         comando.CommandType = CommandType.StoredProcedure;
                         SqlCommandBuilder.DeriveParameters(comando);
@@ -235,17 +235,14 @@ namespace RedSocialDataSQLServer
             {
                 using (SqlConnection conexion = ConexionDA.ObtenerConexion())
                 {
-                    using (SqlCommand comando = new SqlCommand("Alquilar_Publicacion", conexion))
+                    using (SqlCommand comando = new SqlCommand("BuscarMisAlquieres", conexion))
                     {
                         comando.CommandType = CommandType.StoredProcedure;
                         SqlCommandBuilder.DeriveParameters(comando);
 
 
-                        comando.Parameters["@Id_publicacion"].Value = publicacion.Id_publicacion;
                         comando.Parameters["@id_usr_alquilador"].Value = alquiler.Id_usr;
-                        comando.Parameters["@costo"].Value = alquiler.Costo;
-                        comando.Parameters["@fecha_desde"].Value = alquiler.FechaDesde;
-                        comando.Parameters["@fecha_hasta"].Value = alquiler.FechaHasta;
+                        
 
                         comando.ExecuteNonQuery();
 
@@ -274,6 +271,65 @@ namespace RedSocialDataSQLServer
             {
                 con.Open();
               
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+                con.Dispose();
+            }
+        }
+
+
+        public void VerMisAlquilados(GridView GridView3, int Id_usr)
+        {
+            String strConnString = ConfigurationManager.ConnectionStrings["ConexionRedSocial"].ConnectionString;
+            SqlConnection con = new SqlConnection(strConnString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "MisAlquilados";
+            cmd.Parameters.Add("@id_usr", SqlDbType.Int).Value = Id_usr;
+
+
+            cmd.Connection = con;
+            try
+            {
+                con.Open();
+                GridView3.EmptyDataText = "Usted no posee ningun producto Alquilado";
+                GridView3.DataSource = cmd.ExecuteReader();
+                GridView3.DataBind();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+                con.Dispose();
+            }
+        }
+
+        public void VerMisAlquileres(GridView GridView3, int Id_usr)
+        {
+            String strConnString = ConfigurationManager.ConnectionStrings["ConexionRedSocial"].ConnectionString;
+            SqlConnection con = new SqlConnection(strConnString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "MisAlquileres";
+            cmd.Parameters.Add("@id_usr", SqlDbType.Int).Value = Id_usr;
+
+
+            cmd.Connection = con;
+            try
+            {
+                con.Open();
+                GridView3.EmptyDataText = "Usted no posee ningun producto publicado";
+                GridView3.DataSource = cmd.ExecuteReader();
+                GridView3.DataBind();
             }
             catch (Exception ex)
             {
