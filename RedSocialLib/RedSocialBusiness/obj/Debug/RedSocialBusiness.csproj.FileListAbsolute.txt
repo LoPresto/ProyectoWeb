@@ -55,3 +55,16 @@ C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\bin\
 C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.csprojResolveAssemblyReference.cache
 C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.dll
 C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialBusiness.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialBusiness.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialComun.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialData.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialDataSQLServer.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialEntity.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialComun.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialDataSQLServer.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialData.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\bin\Debug\RedSocialEntity.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.csprojResolveAssemblyReference.cache
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialBusiness\obj\Debug\RedSocialBusiness.pdb

@@ -47,3 +47,14 @@ C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer
 C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.csprojResolveAssemblyReference.cache
 C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.dll
 C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialDataSQLServer.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialDataSQLServer.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialData.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialEntity.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialComun.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialData.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialEntity.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialDataSQLServer\bin\Debug\RedSocialComun.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.csprojResolveAssemblyReference.cache
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb-e8f7bcc877b9af621c8e998a5253ee3900c2aac1\RedSocialLib\RedSocialDataSQLServer\obj\Debug\RedSocialDataSQLServer.pdb

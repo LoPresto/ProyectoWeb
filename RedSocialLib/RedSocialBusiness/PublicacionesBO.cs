@@ -82,7 +82,7 @@ namespace RedSocialBusiness
             {
                 //publicacion.ValidarDatos();
 
-                daPublicacion.Alquilar(publicacion, alquiler);
+                 daPublicacion.Alquilar(publicacion, alquiler);
 
             }
             catch (ExcepcionDA ex)
@@ -91,5 +91,21 @@ namespace RedSocialBusiness
             }
 
         }
+
+        public void VerMisAlquileres(GridView GridView3, int id_usr)
+        {
+            daPublicacion.VerMisAlquileres(GridView3, id_usr);
+        }
+
+        public void VerMisAlquilados(GridView GridView3, int id_usr)
+        {
+            daPublicacion.VerMisAlquilados(GridView3, id_usr);
+        }
+
+        public void Devolver(int id_alquiler, int id_publicacion)
+        {
+            daPublicacion.Devolver(id_publicacion, id_alquiler);
+        }
+
     }
 }

@@ -24,6 +24,9 @@ namespace RedSocialBusiness
         public static int      _cantdias       { get; set; }
         public static float    _feeService     { get; set; }
         public static float    _totalcost      { get; set; }
-
+        public static string   _Estado         { get; set; }
+        public static string   _Nombre         { get; set; }
+        public static string   _Email          { get; set; }
+        public static int      _DiasRestantes  { get; set; }
     }
 }

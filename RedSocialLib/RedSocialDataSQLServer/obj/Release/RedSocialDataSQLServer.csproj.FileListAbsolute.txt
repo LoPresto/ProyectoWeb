@@ -1,0 +1,11 @@
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Release\RedSocialDataSQLServer.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Release\RedSocialDataSQLServer.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Release\RedSocialData.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Release\RedSocialEntity.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Release\RedSocialComun.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Release\RedSocialData.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Release\RedSocialEntity.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\bin\Release\RedSocialComun.pdb
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\obj\Release\RedSocialDataSQLServer.csprojResolveAssemblyReference.cache
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\obj\Release\RedSocialDataSQLServer.dll
+C:\Users\Alvaro\Documents\GitHub\ProyectoWeb\RedSocialLib\RedSocialDataSQLServer\obj\Release\RedSocialDataSQLServer.pdb

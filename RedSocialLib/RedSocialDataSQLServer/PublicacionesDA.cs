@@ -203,7 +203,7 @@ namespace RedSocialDataSQLServer
             {
                 using (SqlConnection conexion = ConexionDA.ObtenerConexion())
                 {
-                    using (SqlCommand comando = new SqlCommand("Alquilar_Publicacion", conexion))
+                    using (SqlCommand comando = new SqlCommand("Alquilar", conexion))
                     {
                         comando.CommandType = CommandType.StoredProcedure;
                         SqlCommandBuilder.DeriveParameters(comando);
@@ -229,51 +229,23 @@ namespace RedSocialDataSQLServer
         }
 
 
-        public void DatosAlquiler_Alq(UsuarioEntity alquilador, PublicacionEntity publicacion, AlquilerEntity alquiler)
-        {
-            try
-            {
-                using (SqlConnection conexion = ConexionDA.ObtenerConexion())
-                {
-                    using (SqlCommand comando = new SqlCommand("Alquilar_Publicacion", conexion))
-                    {
-                        comando.CommandType = CommandType.StoredProcedure;
-                        SqlCommandBuilder.DeriveParameters(comando);
-
-
-                        comando.Parameters["@Id_publicacion"].Value = publicacion.Id_publicacion;
-                        comando.Parameters["@id_usr_alquilador"].Value = alquiler.Id_usr;
-                        comando.Parameters["@costo"].Value = alquiler.Costo;
-                        comando.Parameters["@fecha_desde"].Value = alquiler.FechaDesde;
-                        comando.Parameters["@fecha_hasta"].Value = alquiler.FechaHasta;
-
-                        comando.ExecuteNonQuery();
-
-                    }
-
-                    conexion.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new ExcepcionDA("Se produjo un error al alquilar el producto.", ex);
-            }
-        }
-
-        public void DatosAlquiler_public(UsuarioEntity alquilador, PublicacionEntity publicacion, AlquilerEntity alquiler)
+        public void VerMisAlquilados(GridView GridView3, int Id_usr)
         {
             String strConnString = ConfigurationManager.ConnectionStrings["ConexionRedSocial"].ConnectionString;
             SqlConnection con = new SqlConnection(strConnString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "BuscarPublicacion";
-            //cmd.Parameters.Add("@id_usr", SqlDbType.Int).Value = id_usr;
-            //cmd.Parameters.Add("@SearchWord", SqlDbType.Text).Value = SearchWord.Trim();
+            cmd.CommandText = "MisAlquilados";
+            cmd.Parameters.Add("@id_usr", SqlDbType.Int).Value = Id_usr;
+
+
             cmd.Connection = con;
             try
             {
                 con.Open();
-              
+                GridView3.EmptyDataText = "Usted no posee ningun producto Alquilado";
+                GridView3.DataSource = cmd.ExecuteReader();
+                GridView3.DataBind();
             }
             catch (Exception ex)
             {
@@ -286,6 +258,61 @@ namespace RedSocialDataSQLServer
             }
         }
 
+        public void VerMisAlquileres(GridView GridView3, int Id_usr)
+        {
+            String strConnString = ConfigurationManager.ConnectionStrings["ConexionRedSocial"].ConnectionString;
+            SqlConnection con = new SqlConnection(strConnString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "MisAlquileres";
+            cmd.Parameters.Add("@id_usr", SqlDbType.Int).Value = Id_usr;
+
+
+            cmd.Connection = con;
+            try
+            {
+                con.Open();
+                GridView3.EmptyDataText = "Usted no alquiló ningun producto";
+                GridView3.DataSource = cmd.ExecuteReader();
+                GridView3.DataBind();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+                con.Dispose();
+            }
+        }
+        public void Devolver(int id_publicacion, int id_alquiler)
+        {
+            try
+            {
+                using (SqlConnection conexion = ConexionDA.ObtenerConexion())
+                {
+                    using (SqlCommand comando = new SqlCommand("Devolver_Publicacion", conexion))
+                    {
+                        comando.CommandType = CommandType.StoredProcedure;
+                        SqlCommandBuilder.DeriveParameters(comando);
+
+
+                        comando.Parameters["@Id_publicacion"].Value = id_publicacion;
+                        comando.Parameters["@Id_alquiler"].Value = id_alquiler;
+
+                        comando.ExecuteNonQuery();
+
+                    }
+
+                    conexion.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ExcepcionDA("Se produjo un error al devolver la publicación.", ex);
+            }
+        }
         
         #endregion Métodos Públicos
     }

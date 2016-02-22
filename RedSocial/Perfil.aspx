@@ -48,7 +48,7 @@
 	<div class="col-md-4 inline-block espacio-arriba espacio-abajo">
      <h3 class=" text-center pacifico">Mis publicaciones alquiladas
     </h3>
-    <button id="PublicacionesAlquiladasButton2" type="submit" class="btn btn-default fondo_blanco btn-sinborde largo-80" runat="server"   onserverclick="btnCerrar_Sesion" required>
+    <button id="PublicacionesAlquiladasButton2" type="submit" class="btn btn-default fondo_blanco btn-sinborde largo-80" runat="server"   onserverclick="btn_MisPublicacionesAlquiladas_Click" required>
 	<span class="fa-stack fa-lg fa-5x">
 	  <i class="fa fa-square fa-stack-2x"></i>
 	  <i class="fa fa-slideshare fa-stack-1x fa-inverse"></i>
@@ -60,7 +60,7 @@
 	<div class="col-md-4 inline-block espacio-arriba espacio-abajo">
      <h3 class=" text-center pacifico">Mis Alquileres
     </h3>
-    <button id="MisAlquileresButton" type="submit" class="btn btn-default fondo_blanco btn-sinborde largo-80" runat="server"   onserverclick="btnCerrar_Sesion" required>
+    <button id="MisAlquileresButton" type="submit" class="btn btn-default fondo_blanco btn-sinborde largo-80" runat="server"   onserverclick="btn_MisAlquileres_Click" required>
 	<span class="fa-stack fa-lg fa-5x">
 	  <i class="fa fa-square fa-stack-2x"></i>
 	  <i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>

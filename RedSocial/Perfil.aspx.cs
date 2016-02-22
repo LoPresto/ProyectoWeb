@@ -58,11 +58,11 @@ public partial class Biografia : System.Web.UI.Page
 
     protected void btn_MisAlquileres_Click(object sender, EventArgs e)
     {
-        Server.Transfer("Publicar.aspx");
+        Server.Transfer("MisAlquileres.aspx");
     }
 
     protected void btn_MisPublicacionesAlquiladas_Click(object sender, EventArgs e)
     {
-        Server.Transfer("Publicar.aspx");
+        Server.Transfer("MisAlquilados.aspx");
     }
 }
