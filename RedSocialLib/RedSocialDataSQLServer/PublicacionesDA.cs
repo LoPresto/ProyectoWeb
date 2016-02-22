@@ -285,8 +285,34 @@ namespace RedSocialDataSQLServer
                 con.Close();
                 con.Dispose();
             }
-        }       
+        }
+        public void Devolver(int id_publicacion, int id_alquiler)
+        {
+            try
+            {
+                using (SqlConnection conexion = ConexionDA.ObtenerConexion())
+                {
+                    using (SqlCommand comando = new SqlCommand("Devolver_Publicacion", conexion))
+                    {
+                        comando.CommandType = CommandType.StoredProcedure;
+                        SqlCommandBuilder.DeriveParameters(comando);
 
+
+                        comando.Parameters["@Id_publicacion"].Value = id_publicacion;
+                        comando.Parameters["@Id_alquiler"].Value = id_alquiler;
+
+                        comando.ExecuteNonQuery();
+
+                    }
+
+                    conexion.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ExcepcionDA("Se produjo un error al devolver la publicación.", ex);
+            }
+        }
         
         #endregion Métodos Públicos
     }

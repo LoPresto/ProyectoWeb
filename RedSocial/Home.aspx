@@ -12,19 +12,20 @@
 
     <div class=" text-center fondo-gris-obscuro">
 	<div class="col-md-4 inline-block espacio-arriba espacio-abajo">
-	<img src="Imagenes/mazon.gif" alt="">
+	<img src="Imagenes/prd_nopic.jpg" alt="">
 	</div>
 
 	<div class="col-md-4 inline-block imgchicas espacio-arriba espacio-abajo">
-	<img src="Imagenes/mazon.gif" alt="">
+	<img src="Imagenes/prd_nopic.jpg" alt="">
 	</div>
 	
 	<div class="col-md-4 inline-block espacio-arriba espacio-abajo">
-	<img src="Imagenes/mazon.gif" alt="">
+	<img src="Imagenes/prd_nopic.jpg" alt="">
 	</div>
 
 </div>
 </asp:Content>
+
 
 
 

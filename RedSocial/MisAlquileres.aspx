@@ -17,9 +17,10 @@
     AutoGenerateColumns="false">
     <Columns>
     <asp:BoundField DataField="Id_publicacion" HeaderText="Codigo de Publicación" Visible ="True"/>
+    <asp:BoundField DataField="Id_Alquiler" HeaderText="Codigo de Alquiler" Visible ="True"/>
     <asp:BoundField DataField="Titulo" HeaderText="Titulo" />
     <asp:BoundField DataField="DiasRestantes" HeaderText="Dias Restantes" />
-    <asp:BoundField DataField="Estado" HeaderText="Estado" DataFormatString="${0:0.00}" />
+    <asp:BoundField DataField="Estado" HeaderText="Estado"  />
     <asp:BoundField DataField="Publicador" HeaderText="Nombre Publicador"  />
     <asp:BoundField DataField="MailPub" HeaderText="Mail Publicador"  />
     </Columns>

@@ -102,6 +102,10 @@ namespace RedSocialBusiness
             daPublicacion.VerMisAlquilados(GridView3, id_usr);
         }
 
+        public void Devolver(int id_alquiler, int id_publicacion)
+        {
+            daPublicacion.Devolver(id_publicacion, id_alquiler);
+        }
 
     }
 }

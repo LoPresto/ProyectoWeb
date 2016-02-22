@@ -48,18 +48,14 @@ public partial class MisAlquileres : System.Web.UI.Page
         {
             GlobalBo._Id_Publicacion = Convert.ToInt32(Gridrow.Cells[0].Text);
             //GlobalBo._Id_usr = SessionHelper.UsuarioAutenticado.Id_usr;//Gridrow.Cells[0].Text;
-            GlobalBo._Titulo = Gridrow.Cells[1].Text;
-            GlobalBo._Descripcion = Gridrow.Cells[2].Text;
-            GlobalBo._Descripcion = Gridrow.Cells[2].Text;
-            largoprecio = Gridrow.Cells[3].Text.Length;
-            preciocorto = Gridrow.Cells[3].Text.Substring(1, largoprecio - 1);
-            indexcoma = preciocorto.IndexOf(",");
-            GlobalBo._PrecioD = Convert.ToInt32(Gridrow.Cells[3].Text.Substring(1, indexcoma - 1));
-            GlobalBo._PrecioS = GlobalBo._PrecioD * 7;
-            GlobalBo._PrecioM = GlobalBo._PrecioD * 31;
-            GlobalBo._FechaHasta = Convert.ToDateTime(Gridrow.Cells[4].Text);
+            GlobalBo._id_alquiler = Convert.ToInt32(Gridrow.Cells[1].Text);
+            GlobalBo._Titulo = Gridrow.Cells[2].Text;
+            GlobalBo._Estado = Gridrow.Cells[4].Text;
+            GlobalBo._DiasRestantes = Convert.ToInt32(Gridrow.Cells[3].Text);
+            GlobalBo._Nombre = Gridrow.Cells[5].Text;
+            GlobalBo._Email = Gridrow.Cells[6].Text;
 
-            Server.Transfer("Publicacion.aspx");
+            Server.Transfer("Alquiler_Pub.aspx");
 
         }
         else
