@@ -18,7 +18,11 @@ public partial class MisAlquilados : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (!Page.IsPostBack)
+        {
+            PublicacionesBO Publicacion = new PublicacionesBO();
+            Publicacion.VerMisAlquilados(GridView2, SessionHelper.UsuarioAutenticado.Id_usr);
+        }
     }
 
     protected void OnRowDataBound(object sender, System.Web.UI.WebControls.GridViewRowEventArgs e)

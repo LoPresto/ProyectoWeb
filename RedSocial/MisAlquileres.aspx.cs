@@ -17,6 +17,11 @@ public partial class MisAlquileres : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (!Page.IsPostBack)
+        {
+            PublicacionesBO Publicacion = new PublicacionesBO();
+            Publicacion.VerMisAlquileres(GridView2, SessionHelper.UsuarioAutenticado.Id_usr);
+        }
 
     }
 

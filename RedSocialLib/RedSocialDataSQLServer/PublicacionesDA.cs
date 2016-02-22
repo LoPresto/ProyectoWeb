@@ -229,61 +229,6 @@ namespace RedSocialDataSQLServer
         }
 
 
-        public void DatosAlquiler_Alq(UsuarioEntity alquilador, PublicacionEntity publicacion, AlquilerEntity alquiler)
-        {
-            try
-            {
-                using (SqlConnection conexion = ConexionDA.ObtenerConexion())
-                {
-                    using (SqlCommand comando = new SqlCommand("BuscarMisAlquieres", conexion))
-                    {
-                        comando.CommandType = CommandType.StoredProcedure;
-                        SqlCommandBuilder.DeriveParameters(comando);
-
-
-                        comando.Parameters["@id_usr_alquilador"].Value = alquiler.Id_usr;
-                        
-
-                        comando.ExecuteNonQuery();
-
-                    }
-
-                    conexion.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new ExcepcionDA("Se produjo un error al alquilar el producto.", ex);
-            }
-        }
-
-        public void DatosAlquiler_public(UsuarioEntity alquilador, PublicacionEntity publicacion, AlquilerEntity alquiler)
-        {
-            String strConnString = ConfigurationManager.ConnectionStrings["ConexionRedSocial"].ConnectionString;
-            SqlConnection con = new SqlConnection(strConnString);
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "BuscarPublicacion";
-            //cmd.Parameters.Add("@id_usr", SqlDbType.Int).Value = id_usr;
-            //cmd.Parameters.Add("@SearchWord", SqlDbType.Text).Value = SearchWord.Trim();
-            cmd.Connection = con;
-            try
-            {
-                con.Open();
-              
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                con.Close();
-                con.Dispose();
-            }
-        }
-
-
         public void VerMisAlquilados(GridView GridView3, int Id_usr)
         {
             String strConnString = ConfigurationManager.ConnectionStrings["ConexionRedSocial"].ConnectionString;
@@ -327,7 +272,7 @@ namespace RedSocialDataSQLServer
             try
             {
                 con.Open();
-                GridView3.EmptyDataText = "Usted no posee ningun producto publicado";
+                GridView3.EmptyDataText = "Usted no alquiló ningun producto";
                 GridView3.DataSource = cmd.ExecuteReader();
                 GridView3.DataBind();
             }
@@ -340,7 +285,7 @@ namespace RedSocialDataSQLServer
                 con.Close();
                 con.Dispose();
             }
-        }
+        }       
 
         
         #endregion Métodos Públicos

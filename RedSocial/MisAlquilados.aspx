@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LogueadoNormal.master" AutoEventWireup="true" CodeFile="MisAlquilados.aspx.cs" Inherits="MisAlquilados" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LogueadoNormal.master" AutoEventWireup="true" CodeFile="MisAlquilados.aspx.cs" Inherits="MisAlquilados" EnableEventValidation="false"%>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Cuerpo" Runat="Server">
